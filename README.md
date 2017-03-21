@@ -60,8 +60,9 @@ You have to enter your app details in above constants
 --
 If you want to encrypt the constants file, use this online tool https://javascriptobfuscator.com/Javascript-Obfuscator.aspx
 
-
 and paste the encrypted content in the app.credentials.js file
+
+![](http://imgur.com/a/wtZA4)
 
 
 
