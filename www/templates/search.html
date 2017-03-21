@@ -1,0 +1,55 @@
+<ion-view title="Eagle Eye">
+   <ion-header-bar>
+      <div class="searchContainer bar bar-header">
+         <div class="bar item-input-inset searchBox">
+            <label class="item-input-wrapper">
+            <i class="icon ion-heart placeholder-icon"></i>
+            <input type="search" ng-model="config.searchStr" placeholder="Search..." class="search-input searchBar" >
+            </label>
+         </div>
+         <div class="bar item-input-inset locationBox">
+            <label class="item-input-wrapper">
+            <i class="icon ion-ios-navigate placeholder-icon"></i>
+            <input type="search" ng-model="config.location" placeholder="Location" class="search-input searchBar" >
+            </label>
+         </div>
+         <div class="bar item-input-inset buttonContainer">
+            <button class="submitButton ion-search" type="submit" ng-click="search()" prevent-default> Search</button>
+         </div>
+      </div>
+   </ion-header-bar>
+   <ion-content>
+      <ion-list>
+         <div ng-show="config.state == 'noSearchTerm'" class="noResults">
+            Oops! Looks like there were no results.
+         </div>
+         <div ng-show="config.state == 'noResult'" class="noResults">No results found</div>
+         <div ng-show="config.state == 'loaded'">
+            <div class="suggestionText" id="messageBar" ng-if="config.searchStr !== '' && config.location !== ''">
+               <span>Suggestions for <span class="searchTerm">{{config.searchStr}}</span> near <span class="location">{{config.location}}</span></span>
+            </div>
+            <div class="list card"  ng-repeat="venue in venues">
+               <div class="item item-avatar">
+                  <img ng-src="{{venue.picture_url}}">
+                  <div class="search-title">{{venue.name}}</div>
+                  <div class="search-category">{{venue.category}}</div>
+                  <div class="opening-hours">{{venue.openingHours}}</div>
+               </div>
+               <div class="item item-body">
+                  <div class="info">
+                     <span class="venueScore" ng-style="{'background': venue.ratingColor}">
+                     <span>{{venue.rating}}</span>
+                     </span>
+                     <span class="reviews">{{venue.reviews}}</span>
+                  </div>
+                  <div class="venue-address">{{venue.address}} </div>
+                  <p>
+                     {{venue.tips}}
+                     <!-- <span class="author">&ndash; {{venue.author}}</span> -->
+                  </p>
+               </div>
+            </div>
+         </div>
+      </ion-list>
+   </ion-content>
+</ion-view>

@@ -1,0 +1,134 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.backdrop,
+.loading-container {
+    top: 180px;
+}
+.bar.bar-stable .title {
+    color: #fff;
+}
+.searchContainer.bar.bar-header { 
+    height:180px;
+    background: #11c1f3;
+}
+.platform-ios.platform-cordova:not(.fullscreen) .has-header,
+.platform-ios.platform-cordova:not(.fullscreen) .bar-subheader,
+.platform-ios.platform-cordova .backdrop,
+.platform-ios.platform-cordova .loading-container {
+    top: 216px !important;
+}
+.buttonContainer, 
+.bar.bar-stable,
+.searchBox, 
+.locationBox {    
+    background: #11c1f3;
+ }
+.bar.bar-stable {
+    border-color: #11c1f3;
+}
+.searchBox {
+    position: fixed;
+    top: 44px;
+}
+.has-header {
+    top: 180px!important;
+}
+.search-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #11c1f3;
+    font-weight: bold;
+}
+.locationBox {
+    position: fixed;
+    top: 88px;
+}
+.search-category {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+}
+.item-thumbnail-left,
+.item-thumbnail-left .item-content {
+    padding-left: 90px;
+}
+.info,
+.opening-hours {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #aeb4b6;
+}
+.opening-hours {
+    color: #333;
+}
+.info .venueScore {
+    float: none;
+    line-height: 140%;
+    padding: 0;
+    position: relative;
+    top: -1px;
+    width: 25px;
+}
+
+.venueScore {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #ffc800;
+    color: #fff;
+    cursor: default;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    padding: 4px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0;
+    width: 30px;
+}
+.tips {
+    line-height: 115%;
+    color: #959b9e;
+    margin: 10px 10px 0 10px;
+}
+span.searchTerm,
+span.location {
+    font-weight: bold;
+}
+.suggestionText,
+.noResults {
+    background-color: #f0f4f5;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: #959b9e;
+}
+.venue-address {
+    font-weight: normal;
+    margin: 0;
+    font-size: 12px;
+    color: #959b9e;
+}
+.buttonContainer {    
+    position:fixed;
+    top:132px;
+
+  }
+
+.submitButton {
+    background: #4286f4;
+    color:#fff;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
