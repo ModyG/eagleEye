@@ -62,7 +62,7 @@ If you want to encrypt the constants file, use this online tool https://javascri
 
 and paste the encrypted content in the app.credentials.js file
 
-![](http://imgur.com/a/wtZA4)
+![](http://i.imgur.com/qLeDkch.png)
 
 
 
